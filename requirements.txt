@@ -1,0 +1,12 @@
+fastapi==0.105.0
+google-ai-generativelanguage==0.4.0
+google-api-core==2.15.0
+google-auth==2.25.2
+google-generativeai==0.3.2
+googleapis-common-protos==1.62.0
+Pillow==9.5.0
+pydantic==2.5.3
+pydantic_core==2.14.6
+requests==2.31.0
+urllib3==2.0.3
+uvicorn==0.25.0
