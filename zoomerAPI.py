@@ -29,6 +29,7 @@ async def hello():
 
 @app.post('/capta')
 async def pred_class(src: Item):
+    print('Capta request called with: ', src.url)
     link = src.url
     hintTexts = src.hintText
     req = urllib.request.urlretrieve(link, "SavedImage")
@@ -48,4 +49,5 @@ async def pred_class(src: Item):
     r = response.text.replace('*', '')
     result = {'caption': caption, 'hashtags': hashtags,
               'story': story, 'result': r}
+    print('Capta request completed')
     return result
